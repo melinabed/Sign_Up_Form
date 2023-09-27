@@ -1,6 +1,33 @@
-fieldset {
-    display: grid;
-    grid-template-columns: auto auto;
-    border: 2px solid black;
-    padding: 10px;
+body,
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.left-side {
+    position: relative;
+    width: 40%;
+    height: 700px;
+    text-align: center;
+}
+#logo {
+    position: absolute;
+}
+
+img {
+    position: absolute;
+    height: 700px;
+    width: 500px;
+    top: 30px;
+    left: 0px;
+}
+
+.right-side {
+    position: fixed;
+    width: 50%;
+    height: 250px;
+    right: 30px;
 }
