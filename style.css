@@ -1,33 +1,46 @@
-body,
-html {
-    height: 100%;
+/*Makes no gaps from the top of the page*/
+body {
+    margin: 0;
+    padding: 0;
 }
 
-* {
-    box-sizing: border-box;
+/*Splits the page in half*/
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
 }
 
-.left-side {
-    position: relative;
-    width: 40%;
-    height: 700px;
-    text-align: center;
-}
-#logo {
-    position: absolute;
-}
-
-img {
-    position: absolute;
-    height: 700px;
-    width: 500px;
-    top: 30px;
-    left: 0px;
+/*Controls the left side*/
+.left {
+    background-image: url("neon_raindrops.jpg");
+    width: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-.right-side {
-    position: fixed;
-    width: 50%;
-    height: 250px;
-    right: 30px;
+/*Controls the right side*/
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    width: 60vw;
 }
+.welcome {
+    height: 33vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+.container {
+    height: 33vh;
+}
+.button {
+    height: 33vh;
+}
+
+
+
+
