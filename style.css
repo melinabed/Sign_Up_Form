@@ -10,6 +10,7 @@ body {
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+    color: white;
 }
 
 /*Controls the left side*/
@@ -18,27 +19,80 @@ body {
     width: 40vw;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#logo {
     color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 1px;
 }
 
 /*Controls the right side*/
 .right {
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    background-image: linear-gradient(#b22b77, black);
     width: 60vw;
+    font-family: 'Montserrat', sans-serif;
 }
 .welcome {
-    height: 33vh;
+    height: 25vh;
     display: flex;
     justify-content: flex-start;
-    margin-left: 5%;
+    margin: 6% 0 5% 5%;
 }
 .container {
     height: 33vh;
+    background-color: rgb(0, 0, 0);
 }
-.button {
+h3 {
+    margin-left: 50px;
+}
+.form-main-divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.form-divs {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+input {
+    padding: 7px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-color: #b22b77;
+}
+.footer {
     height: 33vh;
+    margin-top: 5%;
+    margin-left: 50px;
+}
+button {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 15px;
+}
+input:focus {
+    background-color: rgb(234, 234, 234);
+}
+
+button:hover {
+    color: black;
+    background-color: #b22b77;
+}
+button:active {
+    box-shadow: 2px 2px 5px black;
 }
 
 
